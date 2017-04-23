@@ -48,38 +48,6 @@
     "*.js": "lint:eslint"
   },
   "pre-commit": "lint:staged",
-  "babel": {
-    "presets": [
-      [
-        "latest",
-        {
-          "es2015": {
-            "modules": false
-          }
-        }
-      ],
-      "react",
-      "stage-0"
-    ],
-    "env": {
-      "production": {
-        "only": [
-          "app"
-        ],
-        "plugins": [
-          "transform-react-remove-prop-types",
-          "transform-react-constant-elements",
-          "transform-react-inline-elements"
-        ]
-      },
-      "test": {
-        "plugins": [
-          "transform-es2015-modules-commonjs",
-          "dynamic-import-node"
-        ]
-      }
-    }
-  },
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb",
@@ -244,7 +212,8 @@
     "babel-eslint": "7.1.1",
     "babel-loader": "6.2.10",
     "babel-plugin-dynamic-import-node": "1.0.0",
-    "babel-plugin-react-intl": "2.2.0",
+    "babel-plugin-react-intl": "^2.3.1",
+    "babel-plugin-react-intl-auto": "^0.3.2",
     "babel-plugin-react-transform": "2.0.2",
     "babel-plugin-transform-es2015-modules-commonjs": "6.18.0",
     "babel-plugin-transform-react-constant-elements": "6.9.1",
@@ -269,6 +238,7 @@
     "eslint-plugin-redux-saga": "0.1.5",
     "eventsource-polyfill": "0.9.6",
     "exports-loader": "0.6.3",
+    "extract-react-intl-messages": "^0.0.2",
     "file-loader": "0.9.0",
     "html-loader": "0.4.4",
     "html-webpack-plugin": "2.24.1",
@@ -276,7 +246,6 @@
     "imports-loader": "0.6.5",
     "jest-cli": "18.0.0",
     "lint-staged": "3.2.1",
-    "ngrok": "2.2.4",
     "node-plop": "0.5.4",
     "null-loader": "0.1.1",
     "offline-plugin": "4.5.2",
