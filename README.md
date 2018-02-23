@@ -51,6 +51,8 @@
 
 ## Features
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/akameco/auto-intl-sample.svg)](https://greenkeeper.io/)
+
 <dl>
   <dt>Quick scaffolding</dt>
   <dd>Create components, containers, routes, selectors and sagas - and their tests - right from the CLI!</dd>
